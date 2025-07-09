@@ -3,7 +3,7 @@
 A clean, modern, and responsive WordPress theme built with **Atomic Design** and **Material Design** principles.  
 Ideal for personal blogs, portfolios, and small business websites.
 
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot 2025-07-09 172626.png )
 
 ---
 
