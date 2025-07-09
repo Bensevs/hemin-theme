@@ -1,0 +1,123 @@
+/*
+Theme Name: Hemin Theme
+Author: Hemincodes
+Author URI: @Hemincodes
+Description: A clean and modern WordPress theme based on Atomic Design and Material Design principles.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hemin-theme
+Tags: responsive, bootstrap, atomic design, material design
+*/
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.7;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Fade In Animation */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accessibility */
+.screen-reader-text {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* انیمیشن‌های Animate.css (اگر ندارید لینک cdn را اضافه کنید) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.content {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.content:hover {
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+hr.border-primary {
+  width: 70px;
+  border-radius: 5px;
+}
+
+.btn.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn.ripple:after {
+  content: "";
+  position: absolute;
+  background: rgba(0,123,255,0.4);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 1;
+  transition: transform 0.5s, opacity 1s;
+  pointer-events: none;
+}
+
+.btn.ripple:active:after {
+  transform: scale(4);
+  opacity: 0;
+  transition: 0s;
+}

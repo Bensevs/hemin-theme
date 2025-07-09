@@ -1,0 +1,1 @@
+<a href="<?php the_permalink(); ?>" class="btn btn-primary ripple">Read More</a>
